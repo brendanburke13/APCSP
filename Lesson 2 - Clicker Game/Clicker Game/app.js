@@ -2,8 +2,8 @@ let rileyImg
 let heading
 function setup() {
     createCanvas(windowWidth, windowHeight)
-    frameRate(1)
-rileyImg = createImg('riley.png','riley image')
+    frameRate(.1)
+rileyImg = createImg('riley.jpg','riley image')
 rileyImg.size(200,100)
 heading = createElement('h2', 'Click Rileys face')
 heading.position(width / 3, height / 4)
