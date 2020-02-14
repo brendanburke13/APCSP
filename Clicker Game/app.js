@@ -2,15 +2,16 @@ let rileyImg
 let heading
 function setup() {
     createCanvas(windowWidth, windowHeight)
-rileyImg = createImg('/riley.png','riley image')
+    frameRate(1)
+rileyImg = createImg('riley.png','riley image')
 rileyImg.size(200,100)
-heading = createElement('h2', 'Click Riley/s face')
+heading = createElement('h2', 'Click Rileys face')
 heading.position(width / 3, height / 4)
 }
 
 function draw() {
     rileyImg.position(random(width), random(height))
-    rileyImg.mousepressed('You Won!')
+    rileyImg.mousePressed('You Won!')
 }
 
 function youWon() {
